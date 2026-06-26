@@ -65,12 +65,20 @@ public class MockBarchartLoader implements BarchartLoader{
         for (Champion champion: champions){
             for (PickRateInterval interval: intervals){
                 if (interval.contains(champion.getPickRate())){
-                    barchart.put(interval.getTag(), champion.getPickRate());
+                    increaseCount(barchart, interval);
                     break;
                 }
             }
         }
 
         return barchart;
+    }
+
+    private void increaseCount(Barchart barchart, PickRateInterval interval) {
+        barchart.put(interval.getTag(),
+                (barchart.get(interval.getTag()) != null) ?
+                        barchart.get(interval.getTag()) + 1 :
+                        1
+                );
     }
 }
