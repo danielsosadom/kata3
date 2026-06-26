@@ -8,7 +8,7 @@ public class Barchart {
     private final String title;
     private final String xAxisTitle;
     private final String yAxisTitle;
-    private final Map<String, Integer> count = new HashMap<>();
+    private final Map<String, Number> count = new HashMap<>();
 
     public Barchart(String title, String xAxisTitle, String yAxisTitle) {
         this.title = title;
@@ -28,15 +28,15 @@ public class Barchart {
         return yAxisTitle;
     }
 
-    public Map<String, Integer> getCount() {
+    public Map<String, Number> getCount() {
         return count;
     }
 
-    public Integer get(String key) {
+    public Number get(String key) {
         return count.get(key);
     }
 
-    public void put(String key, Integer value) {
+    public void put(String key, Number value) {
         count.put(key, value);
     }
 
