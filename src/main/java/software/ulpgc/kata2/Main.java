@@ -1,8 +1,8 @@
 package software.ulpgc.kata2;
 
-import software.ulpgc.kata2.model.io.ChampionReader;
-import software.ulpgc.kata2.model.io.CsvChampionDeserializer;
-import software.ulpgc.kata2.model.io.FileChampionReader;
+import software.ulpgc.kata2.model.io.champion.ChampionReader;
+import software.ulpgc.kata2.model.io.champion.CsvChampionDeserializer;
+import software.ulpgc.kata2.model.io.champion.FileChampionReader;
 
 import java.io.File;
 import java.io.IOException;

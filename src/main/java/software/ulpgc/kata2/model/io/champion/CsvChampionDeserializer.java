@@ -1,4 +1,4 @@
-package software.ulpgc.kata2.model.io;
+package software.ulpgc.kata2.model.io.champion;
 
 import software.ulpgc.kata2.model.Champion;
 
